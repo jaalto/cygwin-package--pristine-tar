@@ -12,7 +12,7 @@ ROOT=/tmp/pristine-tar
 rm -rf $ROOT
 mkdir -p $ROOT/git $ROOT/package-1.1 $ROOT/package-1.2
 
-cp $(ls | grep -v sh) $ROOT/package-1.1
+cp $(ls | tail -n 4) $ROOT/package-1.1
 cp *  $ROOT/package-1.2
 
 set -e
@@ -42,10 +42,10 @@ git checkout pristine-tar
 ls -l
 
 rm ../package-*.tar.gz
-git checkout -b master
+git checkout pristine-tar
 
-pristine-tar checkout package-1.1.tar.gz
-pristine-tar checkout package-1.2.tar.gz
+pristine-tar checkout ../package-1.1.tar.gz
+pristine-tar checkout ../package-1.2.tar.gz
 cd ..
 ls -la
 
