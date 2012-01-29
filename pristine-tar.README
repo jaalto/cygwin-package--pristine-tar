@@ -18,6 +18,7 @@ http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_reposi
 Runtime requirements:
   libgcc1
   perl
+  xdelta
   zlib0
 
 Build requirements:
