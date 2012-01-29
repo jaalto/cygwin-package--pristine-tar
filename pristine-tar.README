@@ -12,6 +12,9 @@ upstream branch, thus allowing Debian packages to be built entirely
 using sources in revision control, without the need to keep copies of
 upstream tarballs.
 
+See documenation at
+http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_repositories/
+
 Runtime requirements:
   libgcc1
   perl
@@ -23,7 +26,8 @@ Build requirements:
   zlib-devel
 
 Canonical homepage:
-  http://... <where the upstream, non-cygwinize package lives>
+  http://packages.debian.org/unstable/pristine-tar
+  http://kitenet.net/~joey/code/pristine-tar
 
 Canonical download:
   See above
