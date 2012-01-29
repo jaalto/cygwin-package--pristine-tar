@@ -1,31 +1,35 @@
 <PKG>
 ------------------------------------------
 
-<One line description - sdesc of setup.hint>
+Regenerate pristine tarballs
 
-<Short description, paragraph - ldesc of setup.hint>
-
-<fFor perl>
-Before use, install additional perl modules:
-
-    cpan MODULE [MODULE ...]
-
-    perl -MCPAN -e 'install $_ for @ARGV' \
-        Time::ParseDate Time::Period
+Regenerate a pristine upstream tarball using only a small binary delta
+file and a revision control checkout of the upstream branch. The
+package also includes a pristine-gz command, which can regenerate a
+pristine .gz file, and a pristine-bz2 for .bz2 files. The delta file
+is designed to be checked into revision control along-side the
+upstream branch, thus allowing Debian packages to be built entirely
+using sources in revision control, without the need to keep copies of
+upstream tarballs.
 
 Runtime requirements:
-  cygwin
+  libgcc1
+  perl
+  zlib0
 
 Build requirements:
-  cygwin
+  libgcc1
+  perl
+  zlib-devel
 
 Canonical homepage:
   http://... <where the upstream, non-cygwinize package lives>
 
 Canonical download:
-  ftp://...  <ditto>
+  See above
 
 Version control repository:
+  git://git.kitenet.net/pristine-tar
 
 Mailing list:
 
@@ -34,14 +38,16 @@ Forum / Wiki:
 IRC channel:
 
 Upstream contact:
-  Maintainer:
+  Maintainer: Joey Hess <joeyh@debian.org>
   Bugs:
+  BTS: http://bugs.debian.org/pristine-tar
 
 License:
-  GPL
+  BSD-2-Clauese   zgz.c
+  GPL-2+          ...rest...
 
 Language:
-  C
+  C, Perl
 
 ------------------------------------------
 
