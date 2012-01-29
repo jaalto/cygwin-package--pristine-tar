@@ -1,24 +1,36 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: pristine-tar 1.17-1 -- decription
+Subject: New package: pristine-tar 1.17-1 -- Regenerate pristine tarballs
 --text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
 
-Homepage:
-License : GPL
+Homepage: http://kitenet.net/~joey/code/pristine-tar
+License : GPL-2+, BSD-2-Clause
 
-<write description here>
+Regenerate pristine tarballs
+
+Regenerate a pristine upstream tarball using only a small binary delta
+file and a revision control checkout of the upstream branch. The
+package also includes a pristine-gz command, which can regenerate a
+pristine .gz file, and a pristine-bz2 for .bz2 files. The delta file
+is designed to be checked into revision control along-side the
+upstream branch, thus allowing Debian packages to be built entirely
+using sources in revision control, without the need to keep copies of
+upstream tarballs.
+
+See documenation at
+http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_repositories/
 
 CHANGES SINCE LAST RELEASE
 ==========================
 
-<Add this section if this is update>
+None,
 
 INSTALL OR UPGRADE NOTES
 ========================
 
-<if anything to watch out>
+Standard install.
 
 CYGWIN INSTALLATION INFORMATION
 ===============================
