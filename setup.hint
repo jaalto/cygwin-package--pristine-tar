@@ -9,4 +9,3 @@ using sources in revision control, without the need to keep copies of
 upstream tarballs."
 category: Devel Perl
 requires: libgcc1 perl zlib0
-
