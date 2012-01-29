@@ -1,0 +1,2 @@
+tag1: pristine-tar
+  http://packages.debian.org/unstable/pristine-tar pregexp:tar.gz file:pristine-tar_1.17.tar.gz new: x:
