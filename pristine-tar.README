@@ -1,4 +1,4 @@
-<PKG>
+pristine-tar
 ------------------------------------------
 
 Regenerate pristine tarballs
@@ -57,23 +57,23 @@ Language:
 ------------------------------------------
 
 Build instructions:
-  unpack <PKG>-*-src.tar.bz2
+  unpack pristine-tar-*-src.tar.bz2
     if you use setup to install this source package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
-  ./<PKG>*.sh all
+  ./pristine-tar*.sh all
 
 ------------------------------------------
 
 Files included in the binary distribution:
-  See content of *.tar.gz
+  See Cygwin package archive
 
 ------------------------------------------
 
 Port Notes:
 
------ version <VER>-<REL> -----
-- Initial release YYYY-MM-DD Firstname Lastname
+----- version 1.17-1 -----
+- Initial release 2012-01-29 Jari Aalto
 
-Cygwin port maintained by: Firstname Lastname <Your email here>
-Copyright (C) YYYY Firstname Lastname; Licensed under GPL v2 or later
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2012 Jari Aalto; Licensed under GPL v2 or later
