@@ -25,7 +25,7 @@ http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_reposi
 CHANGES SINCE LAST RELEASE
 ==========================
 
-None,
+Add XZ support.
 
 INSTALL OR UPGRADE NOTES
 ========================
