@@ -1,5 +1,4 @@
 #!/bin/sh
-# Copyright (C) YYYY Firstname Lastname; Licensed under GPL v2 or later
 #
 # install-after.sh -- Custom installation
 #
@@ -46,11 +45,11 @@ Main()
     # [ "$docdir" ] || return 0
     # [ "$docpkg" ] || return 0
 
-    echo ">> Removing unnecessary SUSE files"
-    Cmd rm -rf $libdir/zgz
+#    echo ">> Removing unnecessary SUSE files"
+#    Cmd rm -rf $libdir/zgz
 
-    echo ">> Removing empty directory"
-    Cmd rm -rf $libdir/perl5/5.10
+    echo ">> Removing unnecessary perllocal.pod directory"
+    Cmd rm -rf $libdir/perl5/5.[0-9]*
 }
 
 Main "$@"
