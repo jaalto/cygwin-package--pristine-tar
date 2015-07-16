@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if ! which xdelta; then
+   echo "Required program xdelta not in PATH, press C-c to abort" >&2
+   read
+fi
+
 pwd=$(cd $(dirname $0) && pwd)
 export PATH="$pwd/../.inst/usr/bin:$PATH"
 
