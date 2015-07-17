@@ -1,4 +1,4 @@
-Subject: Updated: pristine-tar 1.28-2 -- Regenerate pristine tarballs
+Subject: Updated: pristine-tar 1.33-1 -- Regenerate pristine tarballs
 To: cygwin-announce@cygwin.com
 --text follows this line--
 
@@ -25,7 +25,7 @@ http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_reposi
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See ChangeLog at http://git.kitenet.net/?p=pristine-tar.git
+See ChangeLog at http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=summary
 
 INSTALL OR UPGRADE NOTES
 ========================
