@@ -27,6 +27,10 @@ CHANGES SINCE LAST RELEASE
 
 See ChangeLog at http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=summary
 
+Includes Cygwin patch:
+- tar program is read from environment variable PRISTINE_PROGRAM_TAR
+- xdelta program is read from environment variable PRISTINE_PROGRAM_XDELTA
+
 INSTALL OR UPGRADE NOTES
 ========================
 
