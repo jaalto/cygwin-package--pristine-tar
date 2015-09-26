@@ -1,0 +1,15 @@
+---
+ Pristine/Tar.pm |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/Pristine/Tar.pm
++++ b/Pristine/Tar.pm
+@@ -16,7 +16,7 @@ our @EXPORT = qw(error message debug vpr
+ 
+ our $verbose=0;
+ our $debug=0;
+-our $keep=0;
++our $keep=1;
+ 
+ sub progname {
+ 	my $name=$0;
