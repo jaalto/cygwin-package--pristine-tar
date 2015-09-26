@@ -85,8 +85,8 @@ Port Notes:
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749319
   Keeping the temp directory is a workaround in Cygwin
 
------ version 1.33-1 -----
-- New upstream release 2015-07-16 Jari Aalto
+----- version 1.28-3 -----
+- New release 2015-09-26 Jari Aalto
 - Added patch (10) to define external programs in environment variables.
   The initial work was based on presets on Makefile:
   http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=commit;h=b2758dccf01c9d46d3083accab97f48c7978b5b0
