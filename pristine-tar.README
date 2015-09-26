@@ -85,6 +85,9 @@ Port Notes:
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749319
   Keeping the temp directory is a workaround in Cygwin
 
+----- version 1.28-4 -----
+- Rebuild for Perl 5.22.1
+
 ----- version 1.28-3 -----
 - New release 2015-09-26 Jari Aalto
 - Added patch (10) to define external programs in environment variables.
@@ -107,4 +110,4 @@ Port Notes:
 - Initial release 2012-01-29 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2012-2015 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2012-2016 Jari Aalto; Licensed under GPL v2 or later

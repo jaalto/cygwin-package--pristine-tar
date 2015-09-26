@@ -1,4 +1,4 @@
-Subject: Updated: pristine-tar 1.28-3 -- Regenerate pristine tarballs
+Subject: Updated: pristine-tar 1.28-4 -- Regenerate pristine tarballs
 To: cygwin-announce@cygwin.com
 --text follows this line--
 
@@ -25,11 +25,9 @@ http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_reposi
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See ChangeLog at http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=summary
+Rebuilt for perl 5.22
 
-Includes Cygwin patch:
-- tar program is read from environment variable PRISTINE_PROGRAM_TAR
-- xdelta program is read from environment variable PRISTINE_PROGRAM_XDELTA
+See ChangeLog at http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=summary
 
 INSTALL OR UPGRADE NOTES
 ========================
