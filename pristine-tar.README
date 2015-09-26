@@ -15,15 +15,24 @@ upstream tarballs.
 See documenation at
 http://kitenet.net/~joey/blog/entry/generating_pristine_tarballs_from_git_repositories/
 
+Depends on the original format of xdelta (xdelta1). The option
+--pristine is not implemented in xdelta3. See thread
+https://cygwin.com/ml/cygwin-apps/2015-07/msg00078.html
+https://cygwin.com/ml/cygwin-apps/2015-07/msg00084.html
+
+No upstream maintainer as of 2014-02-06
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=737871
+ 
 Runtime requirements:
   libgcc1
   perl
-  xdelta
+  xdelta1
   zlib0
 
 Build requirements:
   libgcc1
   perl
+  quilt
   zlib-devel
 
 Canonical homepage:
@@ -76,6 +85,15 @@ Port Notes:
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749319
   Keeping the temp directory is a workaround in Cygwin
 
+----- version 1.33-1 -----
+- New upstream release 2015-07-16 Jari Aalto
+- Added patch (10) to define external programs in environment variables.
+  The initial work was based on presets on Makefile:
+  http://git.kitenet.net/?p=zzattic/pristine-tar.git;a=commit;h=b2758dccf01c9d46d3083accab97f48c7978b5b0
+
+----- version 1.28-2 -----
+- New upstream release 2013-09-22 user
+
 ----- version 1.28-1 -----
 - New upstream release 2013-09-11 user
 
@@ -88,5 +106,5 @@ Port Notes:
 ----- version 1.17-1 -----
 - Initial release 2012-01-29 Jari Aalto
 
-Cygwin port maintained by: user <jari.aalto@cante.net>
-Copyright (C) 2012-2013 Jari Aalto; Licensed under GPL v2 or later
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2012-2015 Jari Aalto; Licensed under GPL v2 or later

@@ -1,0 +1,35 @@
+---
+ pristine-tar |   15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+--- a/pristine-tar
++++ b/pristine-tar
+@@ -162,6 +162,14 @@ index; none of that will be touched by "
+ 
+ Specifies a location to place temporary files, other than the default.
+ 
++=item B<PRISTINE_PROGRAM_TAR>
++
++If defined, location of program used for creating tar files.
++
++=item B<PRISTINE_PROGRAM_XDELTA>
++
++If defined, location of program used for xdelta.
++
+ =back
+ 
+ =head1 AUTHOR
+@@ -199,6 +207,13 @@ $ENV{PRISTINE_TAR_COMPAT}=1;
+ my $tar_program = "tar";
+ my $xdelta_program = "xdelta";
+ 
++# PATCH by <jari.aalto@cante.net>
++C$tar_program = $ENV{PRISTINE_TAR_PROGRAM_TAR}
++	if defined $ENV{PRISTINE_TAR_PRORGRAM_TAR};
++	
++$xdelta_program = $ENV{PRISTINE_PROGRAM_XDELTA}
++	if defined $ENV{PRISTINE_PROGRAM_XDELTA};
++
+ my $message;
+ 
+ dispatch(

@@ -1,4 +1,11 @@
 #!/bin/sh
+# RUn test from CYGWIN-PATCHES
+# ./test.sh
+
+if ! which xdelta; then
+   echo "Required program xdelta not in PATH, press C-c to abort" >&2
+   read
+fi
 
 pwd=$(cd $(dirname $0) && pwd)
 export PATH="$pwd/../.inst/usr/bin:$PATH"
@@ -14,6 +21,7 @@ mkdir -p $ROOT/git $ROOT/package-1.1 $ROOT/package-1.2
 
 cp $(ls | tail -n 4) $ROOT/package-1.1
 cp *  $ROOT/package-1.2
+
 
 set -e
 
@@ -34,6 +42,8 @@ ls -la
 
 cd $ROOT/package-1.1
 
+echo "TEST: set up - initialize git repository"
+
 git init
 git symbolic-ref HEAD refs/heads/upstream
 git add .
@@ -45,6 +55,8 @@ git add -A
 git commit -m "Import release 1.2"
 git tag upstream/1.2
 
+echo "TEST: command commit"
+
 pristine-tar commit ../package-1.1.tar.gz
 pristine-tar commit ../package-1.2.tar.gz
 
@@ -55,6 +67,8 @@ pristine-tar commit ../packagexz-1.1.tar.xz
 pristine-tar commit ../packagexz-1.2.tar.xz
 
 pwd
+echo "TEST: command checkout"
+
 git checkout pristine-tar
 ls -l
 
@@ -71,6 +85,5 @@ pristine-tar checkout packagexz-1.2.tar.xz
 
 cd ..
 ls -la
-
 
 # End of file

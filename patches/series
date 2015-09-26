@@ -1,1 +1,3 @@
+0001-pristine-tar-Fix-Cwd-abs_path-on-Cygwin.patch
 0010-keep-tmpdir.patch
+010-envvar.patch
