@@ -71,6 +71,10 @@ Files included in the binary distribution:
 ------------------------------------------
 
 Port Notes:
+- See Quilt patches
+  0010 patch is because of some bug:
+  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749319
+  Keeping the temp directory is a workaround in Cygwin
 
 ----- version 1.28-1 -----
 - New upstream release 2013-09-11 user
