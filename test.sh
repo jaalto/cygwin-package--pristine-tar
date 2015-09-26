@@ -54,19 +54,20 @@ pristine-tar commit ../packagebz-1.2.tar.bz2
 pristine-tar commit ../packagexz-1.1.tar.xz
 pristine-tar commit ../packagexz-1.2.tar.xz
 
+pwd
 git checkout pristine-tar
 ls -l
 
 rm ../package-*.tar.*
 
-pristine-tar checkout ../package-1.1.tar.gz
-pristine-tar checkout ../package-1.2.tar.gz
+pristine-tar checkout package-1.1.tar.gz
+pristine-tar checkout package-1.2.tar.gz
 
-pristine-tar checkout ../packagebz-1.1.tar.bz2
-pristine-tar checkout ../packagebz-1.2.tar.bz2
+pristine-tar checkout packagebz-1.1.tar.bz2
+pristine-tar checkout packagebz-1.2.tar.bz2
 
-pristine-tar checkout ../packagexz-1.1.tar.xz
-pristine-tar checkout ../packagexz-1.2.tar.xz
+pristine-tar checkout packagexz-1.1.tar.xz
+pristine-tar checkout packagexz-1.2.tar.xz
 
 cd ..
 ls -la
