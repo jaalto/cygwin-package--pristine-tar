@@ -85,6 +85,10 @@ Port Notes:
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=749319
   Keeping the temp directory is a workaround in Cygwin
 
+----- version 1.28-6 -----
+- New upstream release 2021-03-06 Jari Aalto
+- Rebuild perl5.32
+
 ----- version 1.28-5 -----
 - Rebuild for Perl 5.30.2
 
@@ -113,4 +117,4 @@ Port Notes:
 - Initial release 2012-01-29 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2012-2020 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2012-2021 Jari Aalto; Licensed under GPL v2 or later
