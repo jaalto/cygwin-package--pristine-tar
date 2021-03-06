@@ -8,4 +8,4 @@ upstream branch, thus allowing Debian packages to be built entirely
 using sources in revision control, without the need to keep copies of
 upstream tarballs."
 category: Devel Perl
-requires: perl xdelta zlib0
+requires: perl5_032 xdelta zlib0
